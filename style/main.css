@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Island+Moments&family=Roboto+Slab:wght@300&display=swap');
+
+main{
+    display: grid;
+    grid-template: [start] 'photo info'  350px [row2]
+                   [row2]  'table table ' 200px [row2]
+                   [row3]  'txtarea txtarea' 300px 
+                   [row4]  't t' 300px
+                    [row-end];
+    grid-template-columns: 400px auto;
+}
+
+.mainPhoto {
+    margin: 20px 0 0 60px;
+    max-width : 220px;
+    height: 250px;
+    grid-area: photo;
+}
+.info {
+   margin: 40px 0 0 0;     
+   grid-area: info;
+}
+.info>p {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Island Moments', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 3px;
+}
+.fullName,p>span{
+    font-weight: 1000;
+}
+.info>p:first-child {
+    background-color: #d2e3f1;
+    max-width: 141px;
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+p>a {
+    color: #4a5c6b;
+    text-decoration: underline #7aa0c277;
+}
+
+table {
+    grid-area: table ;
+    width : 500px; 
+    margin-left: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td:first-child {
+    background: #d2e3f1;
+    color: #000;
+    padding: 10px 20px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+td {
+    background: #D8E6F3;
+}
+th:first-child, td:first-child {
+    text-align: left;
+}
+th {
+    background-color: #ecdbc7;
+}
+
+@media (max-width : 660px ) {
+
+    main{
+        display: grid;
+        grid-template: [start] 'photo info'  270px [row2]
+                       [row2]  'table table ' 220px [row2]
+                       [row3]  'txtarea txtarea' 300px 
+                       [row4]  't t' 300px
+                        [row-end];
+        grid-template-columns: 250px auto;
+    }
+    header>div{
+        font-size: 16px;
+    }
+    .mainPhoto {
+    margin: 20px 0 0 30px;
+    width : 170px;
+    height: 190px;
+    grid-area: photo;
+    } 
+    .info{
+     font-size: 15px;
+    }
+     table {
+         width: 400px;
+     }
+}

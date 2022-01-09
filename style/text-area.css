@@ -1,0 +1,62 @@
+.field {
+    grid-area: txtarea;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+.title_field_mail,.check-email,textarea{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+.title_field_mail {
+    background-color: #ecdbc7;
+    width: 204px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+textarea {
+    padding: 15px;
+    height: 100px;
+}
+
+.fieldPhone {
+    grid-area: t;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+.title_field_mail,.check-phone,textarea,.title_field_phone{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+.check-phone,.check-email {
+    width: 100px;
+    background-color: #d2e3f1;
+    border: 0;
+    padding: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.check-email{
+    margin-bottom: 60px;
+    border: 2px solid transparent;
+
+}
+.title_field_mail,.title_field_phone {
+    background-color: #ecdbc7;
+    width: 210px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+textarea {
+    padding: 15px;
+    width : 400px
+}
+.check-phone:hover,
+.check-email:hover {
+    border: 2px solid  #4c6b85;
+}
